@@ -40,9 +40,17 @@ npm install
 npx expo start
 ```
 
-Esto abrirá el Metro Bundler en tu navegador. Desde ahí puedes:
-- Abrir en un emulador Android/iOS  
-- Escanear el código QR con tu dispositivo para ver la app (recomendado)
+5. Esto abrirá el Metro Bundler en tu navegador.
+
+Desde ahí puedes:
+
+- Escanear el código QR con tu dispositivo (recomendado)
+
+Para esto necesitas la app Expo Go:
+
+- [Descargar Expo Go en Google Play]( https://play.google.com/store/apps/details?id=host.exp.exponent&pcampaignid=web_share)
+- [Descargar Expo Go en App Store](https://apps.apple.com/mx/app/expo-go/id982107779)
+
 
 ---
 
