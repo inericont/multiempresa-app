@@ -40,7 +40,7 @@ npm install
 npx expo start
 ```
 
-5. Esto abrirá el Metro Bundler en tu navegador.
+5. Esto abrirá el Metro Bundler.
 
 Desde ahí puedes:
 
@@ -91,5 +91,5 @@ Para esto necesitas la app Expo Go:
 ## Notas importantes
  
 - Para probar la app, simplemente usa las credenciales de prueba listadas arriba.  
-- Se recomienda abrir el proyecto en Expo Go en dispositivo físico o emulador para probar la funcionalidad completa.
+- Se recomienda abrir el proyecto en Expo Go en dispositivo físico para probar la funcionalidad completa.
 
