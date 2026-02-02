@@ -15,7 +15,7 @@ Permite que los usuarios inicien sesión según la empresa y vean la interfaz pe
 
 ## Cómo ejecutar el proyecto
 
-1. Extraer el ZIP del proyecto 
+1. Extraer el ZIP del proyecto o clonar el repositorio.
 2. Entrar a la carpeta del proyecto:
 
 ```bash
@@ -76,9 +76,7 @@ Esto abrirá el Metro Bundler en tu navegador. Desde ahí puedes:
 ---
 
 ## Notas importantes
-
-- `node_modules` y `.expo` **no se incluyen** en el ZIP, se reconstruyen con `npm install`.  
-- La app es multiempresa; cada empresa tiene su propio tema y configuración.  
+ 
 - Para probar la app, simplemente usa las credenciales de prueba listadas arriba.  
 - Se recomienda abrir el proyecto en Expo Go en dispositivo físico o emulador para probar la funcionalidad completa.
 
