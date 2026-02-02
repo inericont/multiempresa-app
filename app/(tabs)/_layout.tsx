@@ -1,33 +1,57 @@
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { Tabs } from "expo-router";
+import React from "react";
+import { HapticTab } from "@/components/haptic-tab";
 
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
-import { useColorScheme } from '@/hooks/use-color-scheme';
+import { Ionicons } from "@expo/vector-icons";
+import { useCompanyTheme } from "../css/theme";
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme();
+  const { primaryColor } = useCompanyTheme();
 
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
         headerShown: false,
         tabBarButton: HapticTab,
-      }}>
+
+        // COLOR DE LA EMPRESA
+        tabBarStyle: {
+          backgroundColor: primaryColor,
+        },
+        tabBarActiveTintColor: "#FFFFFF",
+        tabBarInactiveTintColor: "rgba(255,255,255,0.7)",
+      }}
+    >
+      {/* INICIO*/}
       <Tabs.Screen
-        name="index"
+        name="home"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: "Inicio",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home" size={size ?? 24} color={color} />
+          ),
         }}
       />
+
+      {/* PERFIL */}
       <Tabs.Screen
-        name="explore"
+        name="profile"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: "Perfil",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person" size={size ?? 24} color={color} />
+          ),
+        }}
+      />
+
+      {/* CONFIGUARCIÓN */}
+      <Tabs.Screen
+        name="settings"
+        options={{
+          title: "Configuración",
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="settings" size={size ?? 24} color={color} />
+          ),
         }}
       />
     </Tabs>

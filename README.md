@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
+# Multiempresa App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Esta es una aplicación de React Native usando Expo para un sistema **multiempresa**.  
+Permite que los usuarios inicien sesión según la empresa y vean la interfaz personalizada con el tema de cada compañía.
 
-## Get started
+---
 
-1. Install dependencies
+## Requisitos
 
-   ```bash
-   npm install
-   ```
+- Node.js >= 18  
+- npm o yarn  
+- Expo CLI (`npm install -g expo-cli`)  
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## Cómo ejecutar el proyecto
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
+1. Extraer el ZIP del proyecto 
+2. Entrar a la carpeta del proyecto:
 
 ```bash
-npm run reset-project
+cd multiempresa-app
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. Instalar dependencias:
 
-## Learn more
+```bash
+npm install
 
-To learn more about developing your project with Expo, look at the following resources:
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+4. Iniciar la aplicación:
 
-## Join the community
+```bash
+expo start
+```
 
-Join our community of developers creating universal apps.
+Esto abrirá el Metro Bundler en tu navegador. Desde ahí puedes:
+- Abrir en un emulador Android/iOS  
+- Escanear el código QR con tu dispositivo para ver la app (recomendado)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+## Credenciales de prueba
+
+### Empresas y usuarios
+
+| Empresa    | Usuario       | Correo                | Contraseña |
+|-----------|---------------|----------------------|------------|
+| Empresa A | Juan Pérez    | juan@empresaA.com    | 123456     |
+| Empresa A | María García  | maria@empresaA.com   | 123456     |
+| Empresa B | Ana López     | ana@empresaB.com     | 123456     |
+| Empresa B | Luis Fernández| luis@empresaB.com    | 123456     |
+| Empresa C | Carlos Ruiz   | carlos@empresaC.com  | 123456     |
+| Empresa C | Sofía Martínez| sofia@empresaC.com   | 123456     |
+
+> Nota: Estos usuarios se crean automáticamente al inicializar la app.
+
+---
+
+## Estructura del proyecto
+
+- `app/` → Código principal de la app  (css, database, storage, (tabs))
+- `assets/` → Imágenes, iconos, fuentes (default)  
+- `components/` → Componentes reutilizables (default)  
+- `hooks/` → Custom hooks (default)  
+- `constants/` → Constantes globales (default)   
+- `scripts/` → Scripts auxiliares  (default)  
+- `package.json` → Dependencias y scripts  
+- `package-lock.json` → Lockfile de dependencias  
+- `app.json` → Configuración de Expo  
+- `tsconfig.json` → Configuración de TypeScript  
+- `README.md` → Este archivo  
+
+
+---
+
+## Notas importantes
+
+- `node_modules` y `.expo` **no se incluyen** en el ZIP, se reconstruyen con `npm install`.  
+- La app es multiempresa; cada empresa tiene su propio tema y configuración.  
+- Para probar la app, simplemente usa las credenciales de prueba listadas arriba.  
+- Se recomienda abrir el proyecto en Expo Go en dispositivo físico o emulador para probar la funcionalidad completa.
+
