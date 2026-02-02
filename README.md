@@ -16,7 +16,12 @@ Permite que los usuarios inicien sesión según la empresa y vean la interfaz pe
 ## Cómo ejecutar el proyecto
 
 1. Extraer el ZIP del proyecto o clonar el repositorio.
-2. Entrar a la carpeta del proyecto:
+
+Si no sabes cómo clonar este repositorio, puedes seguir las instrucciones oficiales de GitHub:
+
+[Guía oficial para clonar un repositorio](https://docs.github.com/es/repositories/creating-and-managing-repositories/cloning-a-repository)
+
+3. Entrar a la carpeta del proyecto:
 
 ```bash
 cd multiempresa-app
@@ -32,7 +37,7 @@ npm install
 4. Iniciar la aplicación:
 
 ```bash
-expo start
+npx expo start
 ```
 
 Esto abrirá el Metro Bundler en tu navegador. Desde ahí puedes:
